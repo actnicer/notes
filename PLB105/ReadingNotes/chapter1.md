@@ -28,6 +28,8 @@ Coal
 
 # Botany as a Science 1.3
 
+**Science** - seach for knowledge of the natural world
+
 **Botany** - study of plants
 **Hypothesis** - tentative, unproven explanation for something that has been observed
 
@@ -58,7 +60,7 @@ Modern Plant physiology
 
 **Plant Ecology** - Study of interactions of plants with one another and their environment
 
-**Plant Morphology** - study of structure of plants
+**Plant Morphology** - subdiscipline of botany concerned with the form and structure of plants?
 
 **Genetics** - Science of heredity
 
@@ -67,5 +69,9 @@ Modern Plant physiology
 **Cell Biology** - Science of cell structure and funcion
 
 **Economic botony and ethnobotony** - focuses on practical uses of plants and plant products
+
+The study of the interaction of plants with one another and with their environment is known as plant **ecology**
+
+**plant breeding** - subdiscipline of genetics has improved the quality of crop plants as well as crop yields
 
 ![Alt text](pics/bid40835_bx1a.png)
