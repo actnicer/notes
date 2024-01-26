@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 int main() {
     // declare variables
     int sum{0};
