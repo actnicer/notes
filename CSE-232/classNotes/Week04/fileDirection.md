@@ -16,5 +16,5 @@ no readings
     - pipe character
 
 after making cpp file
-to change the cpp output
+to change the cpp outputg
 - g++ -Wall -std=c++23 redirection -o filename.exe
