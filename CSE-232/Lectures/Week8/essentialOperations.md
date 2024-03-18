@@ -27,5 +27,3 @@
 
 - rule of three also applies with the move operators
 
-## Operator Overloading
-
