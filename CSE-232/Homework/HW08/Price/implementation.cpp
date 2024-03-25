@@ -16,7 +16,7 @@ std::istream& operator>>(std::istream& is, Price& price) {
   char dollarSign;
   is >> dollarSign >> price.f_price;
   return is;
-}
+} 
 
 Price Price::operator+(const Price& other) const {
   return Price(f_price + other.f_price);
@@ -26,7 +26,7 @@ Price Price::operator-(const Price& other) const {
   return Price(f_price - other.f_price);
 }
 
-Price& Price::operator+=(const Price& other) {ost
+Price& Price::operator+=(const Price& other) {
   f_price += other.f_price;
 
   // special pointer, represents current obj instance within member function
@@ -38,3 +38,4 @@ Price& Price::operator-=(const Price& other) {
   f_price -= other.f_price;
   return *this;
 }
+
