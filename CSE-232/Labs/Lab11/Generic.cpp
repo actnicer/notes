@@ -16,7 +16,7 @@ bool alpham(std::pair<std::string, int> a, std::pair<std::string, int> b) {
 
 void PassOrFail(std::vector<std::pair<std::string, int>> &v) {
   auto part = std::partition(v.begin(), v.end(), pass_fail);
-  std::sort(v.begin(), part, alpham);  
+  std::sort(v.begin(), part, alpham);
   std::sort(part, v.end(), alpham);
 }
 
