@@ -13,7 +13,7 @@ int main() {
     std::copy(std::istream_iterator<std::string>(iss), 
       std::istream_iterator<std::string>(), std::back_inserter(words));
     checker = words;
-    std::sort(words.begin(), words.end(), 
+    std::sort(words.begin(), words.end(),
               [](std::string str1, std::string str2){
                 std::transform(str1.begin(), str1.end(), str1.begin(),
                   [](unsigned char c){ return std::tolower(c); });
