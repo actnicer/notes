@@ -7,6 +7,8 @@ using std::string;
 #include <algorithm>
 #include <vector>
 using std::vector;
+#include <set>
+using std::set;
 #include <iterator>
 #include <sstream>
 
@@ -34,20 +36,34 @@ int main() {
     // auto x = nametocity.begin();
     // cout << &x << '\n';
 
-    vector<string> points = {
-    "1",
-    "12312",
-    "575757",
-    };
-    vector<int> result;
-    std::transform(
-    points.begin(),
-    points.end(),
-    back_inserter(result),
-    [](auto const & x) {
-    return stoi(x);
-    }
-    );
-    std::copy(result.begin(), result.end(),
-    std::ostream_iterator<int>(cout, ", "));
+    // vector<double> points = {
+    // 1.03545,
+    // -495731.69,
+    // 315.244256,
+    // -533.55,
+    // 245.566
+    // };
+    // std::sort(points.begin(), points.end(), [](double a, double b){ return a > b; });
+    // vector<int> result;
+    // std::transform(
+    // points.begin(),
+    // points.end(),
+    // back_inserter(result),
+    // [](auto const & x) {
+    // return stoi(x);
+    // }
+    // );
+    // std::copy(points.begin(), points.end(),
+    // std::ostream_iterator<double>(cout, ", "));
+
+    vector<int> v1 = {1, 6, 9, 100};
+    vector<int> v2 = {2, 3, 209, 23};
+
+    std::copy(v2.begin(), v2.end(), v1.begin());
+    std::copy(v1.begin(), v1.end(), std::back_inserter(v2));
+
+    std::copy(v1.begin(), v1.end(), std::ostream_iterator<int>(cout, ", "));
+    cout << '\n';
+    std::copy(v2.begin(), v2.end(), std::ostream_iterator<int>(cout, ", "));
+    cout << '\n';
 }
